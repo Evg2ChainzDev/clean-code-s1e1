@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.matrix-wrapper__more-info {
+.matrix-wrapper__info {
   font-family: fantasy, cursive;
 }
 
@@ -34,13 +34,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.add-section__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-section__row-wrapper {
   display: flex;
 }
 
@@ -74,7 +74,8 @@ button:hover {
 }
 
 /* Heading */
-h3,
+todo-section__caption,
+completed-section__caption,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -163,11 +164,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul .editMode input[type=text] {
+.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.edit-mode label {
   display: none;
 }
