@@ -20,7 +20,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .matrix-wrapper { 
     text-align: center;
@@ -44,22 +44,29 @@ body {
   display: flex;
 }
 
-ul {
+.todo-section__list,
+.completed-section__list {
   margin: 0px;
   padding: 0px;
 }
 
-li,
-h3 {
+.todo-section__item,
+.completed-section__item,
+.todo-section__caption,
+.completed-section__caption {
   list-style: none;
 }
 
-input,
-button {
+.checkbox,
+.edit,
+.delete
+ {
   outline: none;
 }
 
-button {
+.add-section__add-button,
+.edit,
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -69,14 +76,16 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.add-section__add-button:hover,
+.edit:hover,
+.delete:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-todo-section__caption,
-completed-section__caption,
-label[for="new-task"] {
+.todo-section__caption,
+.completed-section__caption,
+.add-section__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +95,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,7 +108,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input-task:focus {
   color: #333;
 }
 
